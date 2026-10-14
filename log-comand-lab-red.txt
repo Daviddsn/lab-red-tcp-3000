@@ -1,0 +1,13 @@
+GNU nano 8.7.1                                                                                         log.txt                                                                                                   
+    1  2026-10-13 23:19:31 echo 'export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "' >> ~/.bashrc
+    2  2026-10-13 23:20:20 source ~/.bashrc
+    3  2026-10-13 23:27:28 #Incio de config do docker
+    4  2026-10-13 23:27:36 git --version
+    5  2026-10-13 23:30:22 git  clone  https://github.com/diced/zipline.git
+    6  2026-10-13 23:30:45 cd zipline/
+    7  2026-10-13 23:32:01 echo "POSTGRESQL_PASSWORD=$(openssl rand -base64 42 | tr -dc A-Za-z0-9 | cut -c -32 | tr -d '\n')" > .env
+    8  2026-10-13 23:32:14 echo "CORE_SECRET=$(openssl rand -base64 42 | tr -dc A-Za-z0-9 | cut -c -32 | tr -d '\n')" >> .env
+    9  2026-10-13 23:32:29 docker compose up -d
+   10  2026-10-13 23:34:44 dcoker ps
+   11  2026-10-13 23:34:53 docker ps
+   12  2026-10-13 23:56:50 history > log.txt
